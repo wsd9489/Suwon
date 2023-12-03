@@ -42,7 +42,6 @@ $ git switch <branch name>
 * **git pull**
 > branch에 있는 최신 파일 pull<br/>
 > 각자 branch에서 작업 후 main brnach에 merge하니까 pull할 때는 main branch 사용<br/>
-> 난.. 바로 git pull만 해도 되던데... 일단 git pull로 해보자^^
 ~~~
 $ git pull origin <branch name>
 ~~~
@@ -56,8 +55,18 @@ $ git push origin <branch name>
 ~~~
 <br/><br/>
 * **git merge**
+> 각자 branch에서 작업 <br/>
+> $ git add . <br/>
+> $ git commit -a -m "내용 작성" (git push X실행X) <br/>
 ~~~
-$ git merge <branch name>
+# 각자 브랜치에서 main으로 전환
+$ git switch main
+
+# pj or dy의 내용 main에 병합
+$ git merge <branch name(pj or dy)>
+
+# git merge 되돌리기
+$ git merge --abort
 ~~~
 
 ---
